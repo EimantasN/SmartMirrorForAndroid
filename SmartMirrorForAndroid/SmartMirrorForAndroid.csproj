@@ -97,6 +97,12 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Refractored.Controls.CircleImageView">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Square.Picasso">
+      <Version>2.5.2.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
       <Version>27.0.2</Version>
     </PackageReference>
@@ -245,6 +251,12 @@
     <AndroidResource Include="Resources\drawable\rytas.png" />
     <AndroidResource Include="Resources\drawable\sauleta.png" />
     <AndroidResource Include="Resources\drawable\zaibuoja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{0c7116d9-db5d-422a-994b-2b8bb67a3fa7}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
