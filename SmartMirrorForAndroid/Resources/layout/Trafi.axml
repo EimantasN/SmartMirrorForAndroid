@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000">
+    <TextView
+        android:id="@+id/EndStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Pašilės g."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/EndTime"
+        app:layout_constraintStart_toEndOf="@+id/EndTime"
+        app:layout_constraintTop_toTopOf="@+id/EndTime" />
+    <TextView
+        android:id="@+id/EndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="04:56"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/StartTime"
+        app:layout_constraintStart_toEndOf="@+id/arrow"
+        app:layout_constraintTop_toTopOf="@+id/StartTime" />
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/NextStopDistance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/NextStopTime"
+        app:srcCompat="@drawable/walk" />
+    <TextView
+        android:id="@+id/StartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="04:28"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/Image"
+        app:layout_constraintStart_toEndOf="@+id/Image"
+        app:layout_constraintTop_toTopOf="@+id/Image" />
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/NextStopDistance"
+        app:layout_constraintStart_toEndOf="@+id/StartTime"
+        app:layout_constraintTop_toBottomOf="@+id/NextStopTime"
+        app:srcCompat="@drawable/arrow" />
+    <TextView
+        android:id="@+id/NextStopTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 min"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        android:textSize="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/arrow"
+        app:layout_constraintStart_toStartOf="@+id/arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/NextStopDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="3350 m"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/arrow"
+        app:layout_constraintStart_toStartOf="@+id/arrow"
+        app:layout_constraintTop_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/ImageBottomDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3350 m."
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        android:textSize="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/Image"
+        app:layout_constraintStart_toStartOf="@+id/Image"
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
+</android.support.constraint.ConstraintLayout>

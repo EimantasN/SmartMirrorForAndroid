@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:paddingTop="10dp">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Black Panther 2018 1080p BluRay x264-SPARKS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/subname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Action, Adventure | Rating: 7.7/10 (242,891 votes)"
+        android:textSize="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2018-05-02 04:12:45"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/subname"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="10.93 GB"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/date" />
+    <TextView
+        android:id="@+id/downloaded"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5,594"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/seeders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/seeders" />
+    <TextView
+        android:id="@+id/seeders"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="348"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/size"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/size" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.57" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.82" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+</android.support.constraint.ConstraintLayout>

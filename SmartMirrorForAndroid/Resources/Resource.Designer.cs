@@ -348,6 +348,18 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f0100a5
 			public const int checkedTextViewStyle = 2130772133;
 			
+			// aapt resource value: 0x7f010194
+			public const int civ_border_color = 2130772372;
+			
+			// aapt resource value: 0x7f010195
+			public const int civ_border_overlay = 2130772373;
+			
+			// aapt resource value: 0x7f010193
+			public const int civ_border_width = 2130772371;
+			
+			// aapt resource value: 0x7f010196
+			public const int civ_fill_color = 2130772374;
+			
 			// aapt resource value: 0x7f0100d5
 			public const int closeIcon = 2130772181;
 			
@@ -2396,118 +2408,160 @@ namespace SmartMirrorForAndroid
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int avd_hide_password = 2130837587;
-			
-			// aapt resource value: 0x7f020073
-			public const int avd_hide_password_1 = 2130837619;
-			
-			// aapt resource value: 0x7f020074
-			public const int avd_hide_password_2 = 2130837620;
-			
-			// aapt resource value: 0x7f020075
-			public const int avd_hide_password_3 = 2130837621;
+			public const int arrow = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int avd_show_password = 2130837588;
+			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020076
-			public const int avd_show_password_1 = 2130837622;
+			// aapt resource value: 0x7f020081
+			public const int avd_hide_password_1 = 2130837633;
 			
-			// aapt resource value: 0x7f020077
-			public const int avd_show_password_2 = 2130837623;
+			// aapt resource value: 0x7f020082
+			public const int avd_hide_password_2 = 2130837634;
 			
-			// aapt resource value: 0x7f020078
-			public const int avd_show_password_3 = 2130837624;
+			// aapt resource value: 0x7f020083
+			public const int avd_hide_password_3 = 2130837635;
 			
 			// aapt resource value: 0x7f020055
-			public const int debesuota = 2130837589;
+			public const int avd_show_password = 2130837589;
+			
+			// aapt resource value: 0x7f020084
+			public const int avd_show_password_1 = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int avd_show_password_2 = 2130837637;
+			
+			// aapt resource value: 0x7f020086
+			public const int avd_show_password_3 = 2130837638;
 			
 			// aapt resource value: 0x7f020056
-			public const int DebesuotaSaule = 2130837590;
+			public const int battery = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_bottom_navigation_item_background = 2130837591;
+			public const int brightness = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_fab_background = 2130837592;
+			public const int city = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_ic_visibility = 2130837593;
+			public const int coldwater = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_ic_visibility_off = 2130837594;
+			public const int debesuota = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int design_password_eye = 2130837595;
+			public const int DebesuotaSaule = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int design_snackbar_background = 2130837596;
+			public const int design_bottom_navigation_item_background = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_launcher = 2130837597;
+			public const int design_fab_background = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_launcher_foreground = 2130837598;
+			public const int design_ic_visibility = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_launcher_round = 2130837599;
+			public const int design_ic_visibility_off = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int lyja = 2130837600;
+			public const int design_password_eye = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int navigation_empty_icon = 2130837601;
+			public const int design_snackbar_background = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_action_background = 2130837602;
+			public const int gym = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_bg = 2130837603;
+			public const int humidity = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int notification_bg_low = 2130837604;
+			public const int ic_launcher = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int notification_bg_low_normal = 2130837605;
+			public const int ic_launcher_foreground = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int notification_bg_low_pressed = 2130837606;
+			public const int ic_launcher_round = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int notification_bg_normal = 2130837607;
+			public const int internet = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int notification_bg_normal_pressed = 2130837608;
+			public const int lyja = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int notification_icon_background = 2130837609;
-			
-			// aapt resource value: 0x7f020071
-			public const int notification_template_icon_bg = 2130837617;
-			
-			// aapt resource value: 0x7f020072
-			public const int notification_template_icon_low_bg = 2130837618;
+			public const int navigation_empty_icon = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int notification_tile_bg = 2130837610;
+			public const int notification_action_background = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int notify_panel_notification_icon_bg = 2130837611;
+			public const int notification_bg = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int rytas = 2130837612;
+			public const int notification_bg_low = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int sauleta = 2130837613;
+			public const int notification_bg_low_normal = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int tooltip_frame_dark = 2130837614;
+			public const int notification_bg_low_pressed = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int tooltip_frame_light = 2130837615;
+			public const int notification_bg_normal = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int zaibuoja = 2130837616;
+			public const int notification_bg_normal_pressed = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int notification_icon_background = 2130837617;
+			
+			// aapt resource value: 0x7f02007f
+			public const int notification_template_icon_bg = 2130837631;
+			
+			// aapt resource value: 0x7f020080
+			public const int notification_template_icon_low_bg = 2130837632;
+			
+			// aapt resource value: 0x7f020072
+			public const int notification_tile_bg = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int notify_panel_notification_icon_bg = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int pressure = 2130837620;
+			
+			// aapt resource value: 0x7f020075
+			public const int rytas = 2130837621;
+			
+			// aapt resource value: 0x7f020076
+			public const int sauleta = 2130837622;
+			
+			// aapt resource value: 0x7f020077
+			public const int tooltip_frame_dark = 2130837623;
+			
+			// aapt resource value: 0x7f020078
+			public const int tooltip_frame_light = 2130837624;
+			
+			// aapt resource value: 0x7f020079
+			public const int twister = 2130837625;
+			
+			// aapt resource value: 0x7f02007a
+			public const int vejas = 2130837626;
+			
+			// aapt resource value: 0x7f02007b
+			public const int walk = 2130837627;
+			
+			// aapt resource value: 0x7f02007c
+			public const int warmwater = 2130837628;
+			
+			// aapt resource value: 0x7f02007d
+			public const int wind = 2130837629;
+			
+			// aapt resource value: 0x7f02007e
+			public const int zaibuoja = 2130837630;
 			
 			static Drawable()
 			{
@@ -2528,11 +2582,35 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080033
 			public const int CTRL = 2131230771;
 			
+			// aapt resource value: 0x7f0800b5
+			public const int CaptionToCity = 2131230901;
+			
+			// aapt resource value: 0x7f0800b6
+			public const int CaptionToGym = 2131230902;
+			
+			// aapt resource value: 0x7f0800ed
+			public const int EndStreet = 2131230957;
+			
+			// aapt resource value: 0x7f0800ee
+			public const int EndTime = 2131230958;
+			
 			// aapt resource value: 0x7f080034
 			public const int FUNCTION = 2131230772;
 			
+			// aapt resource value: 0x7f0800f1
+			public const int Image = 2131230961;
+			
+			// aapt resource value: 0x7f0800f4
+			public const int ImageBottomDistance = 2131230964;
+			
 			// aapt resource value: 0x7f080035
 			public const int META = 2131230773;
+			
+			// aapt resource value: 0x7f0800f2
+			public const int NextStopDistance = 2131230962;
+			
+			// aapt resource value: 0x7f0800f3
+			public const int NextStopTime = 2131230963;
 			
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
@@ -2540,8 +2618,11 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int action0 = 2131230896;
+			// aapt resource value: 0x7f0800ef
+			public const int StartTime = 2131230959;
+			
+			// aapt resource value: 0x7f0800dc
+			public const int action0 = 2131230940;
 			
 			// aapt resource value: 0x7f080089
 			public const int action_bar = 2131230857;
@@ -2564,17 +2645,17 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080067
 			public const int action_bar_title = 2131230823;
 			
-			// aapt resource value: 0x7f0800ad
-			public const int action_container = 2131230893;
+			// aapt resource value: 0x7f0800d9
+			public const int action_container = 2131230937;
 			
 			// aapt resource value: 0x7f08008a
 			public const int action_context_bar = 2131230858;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int action_divider = 2131230900;
+			// aapt resource value: 0x7f0800e0
+			public const int action_divider = 2131230944;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int action_image = 2131230894;
+			// aapt resource value: 0x7f0800da
+			public const int action_image = 2131230938;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2591,11 +2672,11 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080069
 			public const int action_mode_close_button = 2131230825;
 			
-			// aapt resource value: 0x7f0800af
-			public const int action_text = 2131230895;
+			// aapt resource value: 0x7f0800db
+			public const int action_text = 2131230939;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int actions = 2131230909;
+			// aapt resource value: 0x7f0800e9
+			public const int actions = 2131230953;
 			
 			// aapt resource value: 0x7f08006a
 			public const int activity_chooser_view_content = 2131230826;
@@ -2612,6 +2693,9 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080038
 			public const int always = 2131230776;
 			
+			// aapt resource value: 0x7f0800f0
+			public const int arrow = 2131230960;
+			
 			// aapt resource value: 0x7f080063
 			public const int async = 2131230819;
 			
@@ -2620,6 +2704,12 @@ namespace SmartMirrorForAndroid
 			
 			// aapt resource value: 0x7f08005e
 			public const int barrier = 2131230814;
+			
+			// aapt resource value: 0x7f0800ac
+			public const int batterImage = 2131230892;
+			
+			// aapt resource value: 0x7f0800ad
+			public const int batterText = 2131230893;
 			
 			// aapt resource value: 0x7f08002f
 			public const int beginning = 2131230767;
@@ -2630,11 +2720,23 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
+			// aapt resource value: 0x7f0800ae
+			public const int brightnessImage = 2131230894;
+			
+			// aapt resource value: 0x7f0800af
+			public const int brightnessText = 2131230895;
+			
+			// aapt resource value: 0x7f0800bc
+			public const int button = 2131230908;
+			
+			// aapt resource value: 0x7f0800be
+			public const int button2 = 2131230910;
+			
 			// aapt resource value: 0x7f080070
 			public const int buttonPanel = 2131230832;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int cancel_action = 2131230897;
+			// aapt resource value: 0x7f0800dd
+			public const int cancel_action = 2131230941;
 			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
@@ -2651,8 +2753,8 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080080
 			public const int checkbox = 2131230848;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int chronometer = 2131230905;
+			// aapt resource value: 0x7f0800e5
+			public const int chronometer = 2131230949;
 			
 			// aapt resource value: 0x7f08004e
 			public const int clip_horizontal = 2131230798;
@@ -2663,17 +2765,17 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080039
 			public const int collapseActionView = 2131230777;
 			
-			// aapt resource value: 0x7f08009e
-			public const int console = 2131230878;
+			// aapt resource value: 0x7f0800b7
+			public const int console = 2131230903;
 			
-			// aapt resource value: 0x7f0800a1
-			public const int container = 2131230881;
+			// aapt resource value: 0x7f0800c2
+			public const int container = 2131230914;
 			
 			// aapt resource value: 0x7f080073
 			public const int contentPanel = 2131230835;
 			
-			// aapt resource value: 0x7f0800a2
-			public const int coordinator = 2131230882;
+			// aapt resource value: 0x7f0800c3
+			public const int coordinator = 2131230915;
 			
 			// aapt resource value: 0x7f08007a
 			public const int custom = 2131230842;
@@ -2681,26 +2783,29 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080079
 			public const int customPanel = 2131230841;
 			
+			// aapt resource value: 0x7f0800d1
+			public const int date = 2131230929;
+			
 			// aapt resource value: 0x7f080087
 			public const int decor_content_parent = 2131230855;
 			
 			// aapt resource value: 0x7f08006d
 			public const int default_activity_button = 2131230829;
 			
-			// aapt resource value: 0x7f0800a4
-			public const int design_bottom_sheet = 2131230884;
+			// aapt resource value: 0x7f0800c5
+			public const int design_bottom_sheet = 2131230917;
 			
-			// aapt resource value: 0x7f0800ab
-			public const int design_menu_item_action_area = 2131230891;
+			// aapt resource value: 0x7f0800cc
+			public const int design_menu_item_action_area = 2131230924;
 			
-			// aapt resource value: 0x7f0800aa
-			public const int design_menu_item_action_area_stub = 2131230890;
+			// aapt resource value: 0x7f0800cb
+			public const int design_menu_item_action_area_stub = 2131230923;
 			
-			// aapt resource value: 0x7f0800a9
-			public const int design_menu_item_text = 2131230889;
+			// aapt resource value: 0x7f0800ca
+			public const int design_menu_item_text = 2131230922;
 			
-			// aapt resource value: 0x7f0800a8
-			public const int design_navigation_view = 2131230888;
+			// aapt resource value: 0x7f0800c9
+			public const int design_navigation_view = 2131230921;
 			
 			// aapt resource value: 0x7f080060
 			public const int dimensions = 2131230816;
@@ -2711,14 +2816,17 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
 			
+			// aapt resource value: 0x7f0800d5
+			public const int downloaded = 2131230933;
+			
 			// aapt resource value: 0x7f08008b
 			public const int edit_query = 2131230859;
 			
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
-			// aapt resource value: 0x7f0800bf
-			public const int end_padder = 2131230911;
+			// aapt resource value: 0x7f0800eb
+			public const int end_padder = 2131230955;
 			
 			// aapt resource value: 0x7f08003f
 			public const int enterAlways = 2131230783;
@@ -2756,17 +2864,44 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080056
 			public const int gone = 2131230806;
 			
+			// aapt resource value: 0x7f0800a7
+			public const int guideline = 2131230887;
+			
+			// aapt resource value: 0x7f0800a8
+			public const int guideline2 = 2131230888;
+			
+			// aapt resource value: 0x7f0800cf
+			public const int guideline3 = 2131230927;
+			
+			// aapt resource value: 0x7f0800d2
+			public const int guideline5 = 2131230930;
+			
+			// aapt resource value: 0x7f0800d4
+			public const int guideline6 = 2131230932;
+			
+			// aapt resource value: 0x7f0800d7
+			public const int guideline7 = 2131230935;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int guideline8 = 2131230900;
+			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
 			
 			// aapt resource value: 0x7f080021
 			public const int homeAsUp = 2131230753;
 			
+			// aapt resource value: 0x7f0800a1
+			public const int humidity = 2131230881;
+			
+			// aapt resource value: 0x7f0800a5
+			public const int humidityText = 2131230885;
+			
 			// aapt resource value: 0x7f08006f
 			public const int icon = 2131230831;
 			
-			// aapt resource value: 0x7f0800be
-			public const int icon_group = 2131230910;
+			// aapt resource value: 0x7f0800ea
+			public const int icon_group = 2131230954;
 			
 			// aapt resource value: 0x7f08003a
 			public const int ifRoom = 2131230778;
@@ -2774,11 +2909,20 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f08006c
 			public const int image = 2131230828;
 			
-			// aapt resource value: 0x7f08009c
-			public const int imageView = 2131230876;
+			// aapt resource value: 0x7f08009d
+			public const int imageView2 = 2131230877;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int info = 2131230906;
+			// aapt resource value: 0x7f0800a9
+			public const int imageView4 = 2131230889;
+			
+			// aapt resource value: 0x7f0800b2
+			public const int imageView7 = 2131230898;
+			
+			// aapt resource value: 0x7f0800b3
+			public const int imageView8 = 2131230899;
+			
+			// aapt resource value: 0x7f0800e6
+			public const int info = 2131230950;
 			
 			// aapt resource value: 0x7f080057
 			public const int invisible = 2131230807;
@@ -2789,8 +2933,8 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f0800a0
-			public const int largeLabel = 2131230880;
+			// aapt resource value: 0x7f0800c1
+			public const int largeLabel = 2131230913;
 			
 			// aapt resource value: 0x7f080049
 			public const int left = 2131230793;
@@ -2810,14 +2954,14 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f08006e
 			public const int list_item = 2131230830;
 			
-			// aapt resource value: 0x7f0800c2
-			public const int masked = 2131230914;
+			// aapt resource value: 0x7f0800f6
+			public const int masked = 2131230966;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int media_actions = 2131230899;
+			// aapt resource value: 0x7f0800df
+			public const int media_actions = 2131230943;
 			
-			// aapt resource value: 0x7f0800c0
-			public const int message = 2131230912;
+			// aapt resource value: 0x7f0800ec
+			public const int message = 2131230956;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2828,8 +2972,11 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f0800a7
-			public const int navigation_header_container = 2131230887;
+			// aapt resource value: 0x7f0800ce
+			public const int name = 2131230926;
+			
+			// aapt resource value: 0x7f0800c8
+			public const int navigation_header_container = 2131230920;
 			
 			// aapt resource value: 0x7f08003b
 			public const int never = 2131230779;
@@ -2840,14 +2987,14 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f08001e
 			public const int normal = 2131230750;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int notification_background = 2131230908;
+			// aapt resource value: 0x7f0800e8
+			public const int notification_background = 2131230952;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int notification_main_column = 2131230902;
+			// aapt resource value: 0x7f0800e2
+			public const int notification_main_column = 2131230946;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int notification_main_column_container = 2131230901;
+			// aapt resource value: 0x7f0800e1
+			public const int notification_main_column_container = 2131230945;
 			
 			// aapt resource value: 0x7f08005c
 			public const int packed = 2131230812;
@@ -2870,6 +3017,15 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f08004d
 			public const int pin = 2131230797;
 			
+			// aapt resource value: 0x7f08009f
+			public const int pressure = 2131230879;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int pressureText = 2131230883;
+			
+			// aapt resource value: 0x7f0800d8
+			public const int progressBar = 2131230936;
+			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
 			
@@ -2879,14 +3035,32 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080082
 			public const int radio = 2131230850;
 			
+			// aapt resource value: 0x7f0800b1
+			public const int recyclerview = 2131230897;
+			
+			// aapt resource value: 0x7f0800b0
+			public const int recyclerviewLAyout = 2131230896;
+			
+			// aapt resource value: 0x7f0800b8
+			public const int recyclerviewLAyoutToCity = 2131230904;
+			
+			// aapt resource value: 0x7f0800ba
+			public const int recyclerviewLAyoutToGym = 2131230906;
+			
+			// aapt resource value: 0x7f0800b9
+			public const int recyclerviewToCity = 2131230905;
+			
+			// aapt resource value: 0x7f0800bb
+			public const int recyclerviewToGym = 2131230907;
+			
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int right_icon = 2131230907;
+			// aapt resource value: 0x7f0800e7
+			public const int right_icon = 2131230951;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int right_side = 2131230903;
+			// aapt resource value: 0x7f0800e3
+			public const int right_side = 2131230947;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -2945,6 +3119,9 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080096
 			public const int search_voice_btn = 2131230870;
 			
+			// aapt resource value: 0x7f0800d6
+			public const int seeders = 2131230934;
+			
 			// aapt resource value: 0x7f08009b
 			public const int sekundes = 2131230875;
 			
@@ -2963,14 +3140,17 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080025
 			public const int showTitle = 2131230757;
 			
-			// aapt resource value: 0x7f08009f
-			public const int smallLabel = 2131230879;
+			// aapt resource value: 0x7f0800d3
+			public const int size = 2131230931;
 			
-			// aapt resource value: 0x7f0800a6
-			public const int snackbar_action = 2131230886;
+			// aapt resource value: 0x7f0800c0
+			public const int smallLabel = 2131230912;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int snackbar_text = 2131230885;
+			// aapt resource value: 0x7f0800c7
+			public const int snackbar_action = 2131230919;
+			
+			// aapt resource value: 0x7f0800c6
+			public const int snackbar_text = 2131230918;
 			
 			// aapt resource value: 0x7f080043
 			public const int snap = 2131230787;
@@ -3002,14 +3182,17 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int status_bar_latest_event_content = 2131230898;
+			// aapt resource value: 0x7f0800de
+			public const int status_bar_latest_event_content = 2131230942;
 			
 			// aapt resource value: 0x7f080083
 			public const int submenuarrow = 2131230851;
 			
 			// aapt resource value: 0x7f080094
 			public const int submit_area = 2131230868;
+			
+			// aapt resource value: 0x7f0800d0
+			public const int subname = 2131230928;
 			
 			// aapt resource value: 0x7f08001f
 			public const int tabMode = 2131230751;
@@ -3032,14 +3215,29 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080099
 			public const int textView = 2131230873;
 			
+			// aapt resource value: 0x7f0800ab
+			public const int textView10 = 2131230891;
+			
 			// aapt resource value: 0x7f08009a
 			public const int textView2 = 2131230874;
 			
-			// aapt resource value: 0x7f08009d
-			public const int textView3 = 2131230877;
+			// aapt resource value: 0x7f0800bd
+			public const int textView27 = 2131230909;
 			
-			// aapt resource value: 0x7f0800ac
-			public const int text_input_password_toggle = 2131230892;
+			// aapt resource value: 0x7f0800bf
+			public const int textView28 = 2131230911;
+			
+			// aapt resource value: 0x7f08009c
+			public const int textView3 = 2131230876;
+			
+			// aapt resource value: 0x7f08009e
+			public const int textView5 = 2131230878;
+			
+			// aapt resource value: 0x7f0800aa
+			public const int textView9 = 2131230890;
+			
+			// aapt resource value: 0x7f0800cd
+			public const int text_input_password_toggle = 2131230925;
 			
 			// aapt resource value: 0x7f080014
 			public const int textinput_counter = 2131230740;
@@ -3047,8 +3245,8 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int time = 2131230904;
+			// aapt resource value: 0x7f0800e4
+			public const int time = 2131230948;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -3065,8 +3263,8 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f08007b
 			public const int topPanel = 2131230843;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int touch_outside = 2131230883;
+			// aapt resource value: 0x7f0800c4
+			public const int touch_outside = 2131230916;
 			
 			// aapt resource value: 0x7f08000f
 			public const int transition_current_scene = 2131230735;
@@ -3095,8 +3293,20 @@ namespace SmartMirrorForAndroid
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800c1
-			public const int visible = 2131230913;
+			// aapt resource value: 0x7f0800f5
+			public const int visible = 2131230965;
+			
+			// aapt resource value: 0x7f0800a2
+			public const int water = 2131230882;
+			
+			// aapt resource value: 0x7f0800a6
+			public const int waterText = 2131230886;
+			
+			// aapt resource value: 0x7f0800a0
+			public const int wind = 2131230880;
+			
+			// aapt resource value: 0x7f0800a4
+			public const int windText = 2131230884;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3287,64 +3497,73 @@ namespace SmartMirrorForAndroid
 			public const int design_text_input_password_icon = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int notification_action = 2130968617;
+			public const int LinkomanijosList = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int notification_action_tombstone = 2130968618;
+			public const int Loading = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int notification_media_action = 2130968619;
+			public const int notification_action = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int notification_media_cancel_action = 2130968620;
+			public const int notification_action_tombstone = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int notification_template_big_media = 2130968621;
+			public const int notification_media_action = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_template_big_media_custom = 2130968622;
+			public const int notification_media_cancel_action = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_template_big_media_narrow = 2130968623;
+			public const int notification_template_big_media = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_template_big_media_narrow_custom = 2130968624;
+			public const int notification_template_big_media_custom = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_template_custom_big = 2130968625;
+			public const int notification_template_big_media_narrow = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_icon_group = 2130968626;
+			public const int notification_template_big_media_narrow_custom = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_lines_media = 2130968627;
+			public const int notification_template_custom_big = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_media = 2130968628;
+			public const int notification_template_icon_group = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_media_custom = 2130968629;
+			public const int notification_template_lines_media = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_part_chronometer = 2130968630;
+			public const int notification_template_media = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_part_time = 2130968631;
+			public const int notification_template_media_custom = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int select_dialog_item_material = 2130968632;
+			public const int notification_template_part_chronometer = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int select_dialog_multichoice_material = 2130968633;
+			public const int notification_template_part_time = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int select_dialog_singlechoice_material = 2130968634;
+			public const int select_dialog_item_material = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int support_simple_spinner_dropdown_item = 2130968635;
+			public const int select_dialog_multichoice_material = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int tooltip = 2130968636;
+			public const int select_dialog_singlechoice_material = 2130968636;
+			
+			// aapt resource value: 0x7f04003d
+			public const int support_simple_spinner_dropdown_item = 2130968637;
+			
+			// aapt resource value: 0x7f04003e
+			public const int tooltip = 2130968638;
+			
+			// aapt resource value: 0x7f04003f
+			public const int Trafi = 2130968639;
 			
 			static Layout()
 			{
@@ -5562,6 +5781,24 @@ namespace SmartMirrorForAndroid
 			
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
+			
+			public static int[] CircleImageView = new int[] {
+					2130772371,
+					2130772372,
+					2130772373,
+					2130772374};
+			
+			// aapt resource value: 1
+			public const int CircleImageView_civ_border_color = 1;
+			
+			// aapt resource value: 2
+			public const int CircleImageView_civ_border_overlay = 2;
+			
+			// aapt resource value: 0
+			public const int CircleImageView_civ_border_width = 0;
+			
+			// aapt resource value: 3
+			public const int CircleImageView_civ_fill_color = 3;
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130771980,

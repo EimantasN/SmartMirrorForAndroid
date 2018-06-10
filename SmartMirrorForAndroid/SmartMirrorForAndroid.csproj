@@ -251,6 +251,29 @@
     <AndroidResource Include="Resources\drawable\rytas.png" />
     <AndroidResource Include="Resources\drawable\sauleta.png" />
     <AndroidResource Include="Resources\drawable\zaibuoja.png" />
+    <AndroidResource Include="Resources\drawable\twister.png" />
+    <AndroidResource Include="Resources\drawable\wind.png" />
+    <AndroidResource Include="Resources\drawable\vejas.png" />
+    <AndroidResource Include="Resources\drawable\humidity.png" />
+    <AndroidResource Include="Resources\drawable\pressure.png" />
+    <AndroidResource Include="Resources\drawable\warmwater.png" />
+    <AndroidResource Include="Resources\drawable\coldwater.png" />
+    <AndroidResource Include="Resources\drawable\internet.png" />
+    <AndroidResource Include="Resources\drawable\battery.png" />
+    <AndroidResource Include="Resources\drawable\brightness.png" />
+    <AndroidResource Include="Resources\layout\LinkomanijosList.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Loading.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\gym.png" />
+    <AndroidResource Include="Resources\drawable\city.png" />
+    <AndroidResource Include="Resources\layout\Trafi.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\walk.png" />
+    <AndroidResource Include="Resources\drawable\arrow.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Library\Library.csproj">
