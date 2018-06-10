@@ -17,14 +17,21 @@ using Android.Speech.Tts;
 using Android.Runtime;
 using Java.Util;
 using Android.Speech;
+using System.Text;
+using Android.Media;
 
 namespace SmartMirrorForAndroid
 {
     [Activity(Label = "@string/app_name", ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape, Theme = "@style/Theme.AppCompat.Light.NoActionBar", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity, TextToSpeech.IOnInitListener
+    public class MainActivity : AppCompatActivity, IRecognitionListener, TextToSpeech.IOnInitListener
     {
         //SPEECH
         private const int VOICE = 10;
+
+        int musicOrigVol;
+        AudioManager audioManager;
+
+        private SpeechRecognizer sr;
         TextToSpeech tts;
         Button textToSpeech;
         TextView SpeechText;
@@ -129,15 +136,34 @@ namespace SmartMirrorForAndroid
             mRecyclerView.SetAdapter(mAdapter);
 
             //SPEECH
-            textToSpeech = FindViewById<Button>(Resource.Id.button);
-            SpeechText = FindViewById<TextView>(Resource.Id.textView27);
+
+            //For audio control
+            audioManager = (AudioManager)GetSystemService(Context.AudioService);
 
             textToSpeech = FindViewById<Button>(Resource.Id.button);
             SpeechText = FindViewById<TextView>(Resource.Id.textView27);
+
+            SpeechToText = FindViewById<Button>(Resource.Id.button2);
+            lisenTome = FindViewById<TextView>(Resource.Id.textView28);
 
             tts = new TextToSpeech(this, this);
 
+            sr = SpeechRecognizer.CreateSpeechRecognizer(this);
+            sr.SetRecognitionListener(this);
+
             textToSpeech.Click += TextToSpeech_Click;
+
+            SpeechToText.Click += (sender, e) =>
+            {
+                musicOrigVol = audioManager.GetStreamVolume(Stream.Music);
+                audioManager.SetStreamVolume(Stream.Music, 0, 0);
+                Intent intent = new Intent(RecognizerIntent.ActionRecognizeSpeech);
+                intent.PutExtra(RecognizerIntent.ExtraLanguageModel, RecognizerIntent.LanguageModelFreeForm);
+                intent.PutExtra(RecognizerIntent.ExtraCallingPackage, "this package");
+                intent.PutExtra(RecognizerIntent.ExtraMaxResults, 5);
+                sr.StartListening(intent);
+            };
+            //SpeechToText.Click += RecordVoice;
 
         }
 
@@ -593,8 +619,8 @@ namespace SmartMirrorForAndroid
 
         private void RecordVoice(object s, EventArgs e)
         {
-            var result = FindViewById<TextView>(Resource.Id.ResultText);
-            result.Text = string.Empty;
+            var result = lisenTome;
+            lisenTome.Text = string.Empty;
             var voiceIntent = new Intent(RecognizerIntent.ActionRecognizeSpeech);
             voiceIntent.PutExtra(RecognizerIntent.ExtraLanguageModel, RecognizerIntent.LanguageModelFreeForm);
             voiceIntent.PutExtra(RecognizerIntent.ExtraPrompt, "Speak Now :)");
@@ -613,8 +639,7 @@ namespace SmartMirrorForAndroid
                 if (resultVal == Result.Ok)
                 {
                     var matches = data.GetStringArrayListExtra(RecognizerIntent.ExtraResults);
-                    var result = FindViewById<TextView>(Resource.Id.ResultText);
-                    result.Text = matches[0].ToString();
+                    lisenTome.Text = matches[0].ToString();
                 }
             }
             base.OnActivityResult(requestCode, resultVal, data);
@@ -636,6 +661,62 @@ namespace SmartMirrorForAndroid
             {
                 tts.Speak(text, QueueMode.Flush, null);
             }
+        }
+
+
+        public void OnBeginningOfSpeech()
+        {
+            lisenTome.Text = "Beginning";
+        }
+
+        public void OnBufferReceived(byte[] buffer)
+        {
+            lisenTome.Text = "Duomenys analizuojami";
+        }
+
+        public void OnEndOfSpeech()
+        {
+            lisenTome.Text = "Klausausi";
+            //audioManager.SetStreamVolume(Stream.Music, musicOrigVol, 0);
+        }
+
+        public void OnError([GeneratedEnum] SpeechRecognizerError error)
+        {
+            lisenTome.Text = error.ToString();
+            audioManager.SetStreamVolume(Stream.Music, musicOrigVol, 0);
+        }
+
+        public void OnEvent(int eventType, Bundle @params)
+        {
+        }
+
+        public void OnPartialResults(Bundle partialResults)
+        {
+        }
+
+        public void OnReadyForSpeech(Bundle @params)
+        {
+            lisenTome.Text = "Ready!";
+        }
+
+        public void OnResults(Bundle results)
+        {
+            var data = results.GetStringArrayList(SpeechRecognizer.ResultsRecognition);
+            //    StringBuilder builder = new StringBuilder();
+            //    for (int i = 0; i < data.Count; i++)
+            //    {
+            //        builder.Append(data[i]);
+            //    }
+            if (data.Any(x => x.Contains("hi")))
+            {
+                lisenTome.Text = "Hi";
+            }
+            audioManager.SetStreamVolume(Stream.Music, musicOrigVol, 0);
+
+        }
+
+        public void OnRmsChanged(float rmsdB)
+        {
         }
         #endregion
     }
