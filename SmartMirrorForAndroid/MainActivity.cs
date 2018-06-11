@@ -19,12 +19,25 @@ using Java.Util;
 using Android.Speech;
 using System.Text;
 using Android.Media;
+using FaceRecognition;
+using Android.Provider;
+using Android.Graphics;
 
 namespace SmartMirrorForAndroid
 {
     [Activity(Label = "@string/app_name", ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape, Theme = "@style/Theme.AppCompat.Light.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, IRecognitionListener, TextToSpeech.IOnInitListener
     {
+        //Capera picture
+        ImageView camereImg;
+
+
+        //Face recognition
+        //private FaceServiceRestClient faceServiceClinet = new FaceServiceRestClient();
+
+        Button recognition;
+        TextView recognitionText;
+
         //SPEECH
         private const int VOICE = 10;
 
@@ -165,7 +178,36 @@ namespace SmartMirrorForAndroid
             };
             //SpeechToText.Click += RecordVoice;
 
+            recognition = FindViewById<Button>(Resource.Id.button3);
+            recognitionText = FindViewById<TextView>(Resource.Id.textView6);
+
+
+            camereImg = FindViewById<ImageView>(Resource.Id.imageView);
+            recognition.Click += async delegate
+            {
+                //static final int REQUEST_IMAGE_CAPTURE = 1;
+                //Intent takePictureIntent = new Intent(MediaStore.ActionImageCapture);
+                //if (takePictureIntent.ResolveActivity(PackageManager) != null)
+                //{
+                //    StartActivityForResult(takePictureIntent, 1);
+                //}
+
+
+                Class1 classs = new Class1();
+                string path = @"/data/user/0/camerapictureTaking.camerapictureTaking/filesEimantas.jpg";
+                recognitionText.Text = await classs.RecognitionFace("1", path);
+                SpeechText.Text = "Authorization succeeded, Hello came back " + recognitionText.Text;
+                //Speak();
+            };
+
         }
+
+        //protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
+        //{
+        //    base.OnActivityResult(requestCode, resultCode, data);
+        //    Bitmap bitmap = (Bitmap)data.Extras.Get("data");
+        //    camereImg.SetImageBitmap(bitmap);
+        //}
 
         private void TextToSpeech_Click(object sender, EventArgs e)
         {

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="camerapictureTaking.camerapictureTaking" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+
+  <uses-permission android:name="android.permission.CAMERA" />
+
+  <!-- The following permissions are only requested if the device is on M or above.
+
+     On older platforms these permissions are not requested and will not be available. -->
+
+  <uses-permission-sdk-m android:name="android.permission.READ_CONTACTS" />
+
+  <uses-permission-sdk-m android:name="android.permission.WRITE_CONTACTS" />
+  
+	<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+    
+  </application>
+</manifest>
