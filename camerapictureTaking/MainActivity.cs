@@ -9,7 +9,6 @@ using Camera = Android.Hardware.Camera;
 using Android.Graphics;
 using static Android.Hardware.Camera;
 using Java.IO;
-using FaceRecognition;
 using Android.Hardware;
 using System.IO;
 using System.Threading.Tasks;
@@ -211,7 +210,7 @@ namespace camerapictureTaking
                     fos.Write(flippedImageByteArray);
                     fos.Close();
 
-                    Class1 classs = new Class1();
+                    var classs = new FaceRecognition.FaceRecognition();
                     var result = classs.RecognitionFace("1", fileName).Result;
                     Application.SynchronizationContext.Post(_ => { button.Text = result; }, null);
                 });

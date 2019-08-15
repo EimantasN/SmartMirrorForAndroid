@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMirrorForAndroid", "SmartMirrorForAndroid\SmartMirrorForAndroid.csproj", "{CBAF79F7-E46C-4807-90CE-BC6A06E9B340}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.csproj", "{0C7116D9-DB5D-422A-994B-2B8BB67A3FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceRecognition", "FaceRecognition\FaceRecognition.csproj", "{9A840152-FA8D-4D7D-A798-665B73214990}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "camerapictureTaking", "camerapictureTaking\camerapictureTaking.csproj", "{87C9D5D9-DACC-419F-9B6A-857FE64867FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetectDroid", "camerapictureTaking\FaceDetectDroid.csproj", "{87C9D5D9-DACC-419F-9B6A-857FE64867FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,11 +20,9 @@ Global
 		{CBAF79F7-E46C-4807-90CE-BC6A06E9B340}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CBAF79F7-E46C-4807-90CE-BC6A06E9B340}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{0C7116D9-DB5D-422A-994B-2B8BB67A3FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7116D9-DB5D-422A-994B-2B8BB67A3FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C7116D9-DB5D-422A-994B-2B8BB67A3FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C7116D9-DB5D-422A-994B-2B8BB67A3FA7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A840152-FA8D-4D7D-A798-665B73214990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A840152-FA8D-4D7D-A798-665B73214990}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A840152-FA8D-4D7D-A798-665B73214990}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87C9D5D9-DACC-419F-9B6A-857FE64867FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87C9D5D9-DACC-419F-9B6A-857FE64867FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87C9D5D9-DACC-419F-9B6A-857FE64867FD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU

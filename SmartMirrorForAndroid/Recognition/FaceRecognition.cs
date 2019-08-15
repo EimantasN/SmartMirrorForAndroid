@@ -1,18 +1,21 @@
-﻿using Microsoft.ProjectOxford.Face;
-using Microsoft.ProjectOxford.Face.Contract;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Microsoft.ProjectOxford.Face;
+using Microsoft.ProjectOxford.Face.Contract;
 
-namespace FaceRecognition
+namespace SmartMirrorForAndroid.Recognition
 {
-
-    //string path = @"C:\Users\Eimantas\Desktop\Eimantas\20171223_163303.jpg";
-    //new Program().RecognitionFace("1", path);
-    public class Class1
+    public class FaceRecognition
     {
         FaceServiceClient faceServiceClient = new FaceServiceClient("d96e2f6782b7472684573750c3f41d90", "https://westcentralus.api.cognitive.microsoft.com/face/v1.0");
 

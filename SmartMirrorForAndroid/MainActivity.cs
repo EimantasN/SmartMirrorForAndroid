@@ -7,21 +7,17 @@ using System;
 using System.Threading.Tasks;
 using Library;
 using Square.Picasso;
-using Android.Webkit;
 using Android.Content;
 using Android.Support.V7.Widget;
 using System.Collections.Generic;
-using Refractored.Controls;
 using System.Linq;
 using Android.Speech.Tts;
 using Android.Runtime;
 using Java.Util;
 using Android.Speech;
-using System.Text;
 using Android.Media;
-using FaceRecognition;
-using Android.Provider;
-using Android.Graphics;
+using Xamarin.Cognitive.Face.Droid;
+using SmartMirrorForAndroid.Recognition;
 
 namespace SmartMirrorForAndroid
 {
@@ -33,7 +29,7 @@ namespace SmartMirrorForAndroid
 
 
         //Face recognition
-        //private FaceServiceRestClient faceServiceClinet = new FaceServiceRestClient();
+        FaceRecognition MyServiceClinet = new FaceRecognition();
 
         Button recognition;
         TextView recognitionText;
@@ -193,7 +189,7 @@ namespace SmartMirrorForAndroid
                 //}
 
 
-                Class1 classs = new Class1();
+                var classs = new FaceRecognition();
                 string path = @"/data/user/0/camerapictureTaking.camerapictureTaking/filesEimantas.jpg";
                 recognitionText.Text = await classs.RecognitionFace("1", path);
                 SpeechText.Text = "Authorization succeeded, Hello came back " + recognitionText.Text;
@@ -240,61 +236,61 @@ namespace SmartMirrorForAndroid
 
         public async Task updateWithInterval()
         {
-            temperatureData = parsing.ParseTemperatureData("Kaunas", console);
-            Application.SynchronizationContext.Post(_ => { Temperature.Text = temperatureData.Temperature; }, null);
-            //SetImage(temperatureData.image);
+            ////temperatureData = parsing.ParseTemperatureData("Kaunas", console);
+            //Application.SynchronizationContext.Post(_ => { Temperature.Text = temperatureData.Temperature; }, null);
+            ////SetImage(temperatureData.image);
 
-            var time = parsing.TrafiApi();
-            Application.SynchronizationContext.Post(_ => { EraseCity(); }, null);
-            await Task.Delay(250);
-            time.HomeToAkro.Routes.First().RouteSegments.ForEach(x =>
-            {
-                var model = new TrafiListModel
-                {
-                    Image = x.IconUrl,
-                    StartTime = x.StartPoint.Time,
-                    EndTime = x.EndPoint.Time,
-                    EndStreet = x.EndPoint.Name,
-                    NextStopDistance = x.DistanceMeters + " m",
-                    NextStopTime = x.DurationMinutes + " min",
-                    ImageBottomDistance = x.WalkDistanceMeters.ToString()
-                };
-                Application.SynchronizationContext.Post(_ => { ToCityList.Add(model); }, null);
+            //var time = parsing.TrafiApi();
+            //Application.SynchronizationContext.Post(_ => { EraseCity(); }, null);
+            //await Task.Delay(250);
+            //time.HomeToAkro.Routes.First().RouteSegments.ForEach(x =>
+            //{
+            //    var model = new TrafiListModel
+            //    {
+            //        Image = x.IconUrl,
+            //        StartTime = x.StartPoint.Time,
+            //        EndTime = x.EndPoint.Time,
+            //        EndStreet = x.EndPoint.Name,
+            //        NextStopDistance = x.DistanceMeters + " m",
+            //        NextStopTime = x.DurationMinutes + " min",
+            //        ImageBottomDistance = x.WalkDistanceMeters.ToString()
+            //    };
+            //    Application.SynchronizationContext.Post(_ => { ToCityList.Add(model); }, null);
 
-            });
-            Application.SynchronizationContext.Post(_ => { EraseGym(); }, null);
-            await Task.Delay(250);
-            time.HomeToGym.Routes.First().RouteSegments.ForEach(x =>
-            {
-                var model = new TrafiListModel
-                {
-                    Image = x.IconUrl,
-                    StartTime = x.StartPoint.Time,
-                    EndTime = x.EndPoint.Time,
-                    EndStreet = x.EndPoint.Name,
-                    NextStopDistance = x.DistanceMeters + " m",
-                    NextStopTime = x.DurationMinutes + " min",
-                    ImageBottomDistance = x.WalkDistanceMeters.ToString()
-                };
-                Application.SynchronizationContext.Post(_ => { ToGymList.Add(model); }, null);
+            //});
+            //Application.SynchronizationContext.Post(_ => { EraseGym(); }, null);
+            //await Task.Delay(250);
+            //time.HomeToGym.Routes.First().RouteSegments.ForEach(x =>
+            //{
+            //    var model = new TrafiListModel
+            //    {
+            //        Image = x.IconUrl,
+            //        StartTime = x.StartPoint.Time,
+            //        EndTime = x.EndPoint.Time,
+            //        EndStreet = x.EndPoint.Name,
+            //        NextStopDistance = x.DistanceMeters + " m",
+            //        NextStopTime = x.DurationMinutes + " min",
+            //        ImageBottomDistance = x.WalkDistanceMeters.ToString()
+            //    };
+            //    Application.SynchronizationContext.Post(_ => { ToGymList.Add(model); }, null);
 
-            });
-            await Task.Delay(250);
+            //});
+            //await Task.Delay(250);
 
-            Application.SynchronizationContext.Post(_ => { Erase(); }, null);
+            //Application.SynchronizationContext.Post(_ => { Erase(); }, null);
 
 
-            parsing.GetLinkomanijosHdMovies().ForEach(x =>
-            {
-                Application.SynchronizationContext.Post(_ => { List.Add(x); }, null);
-            });
+            //parsing.GetLinkomanijosHdMovies().ForEach(x =>
+            //{
+            //    Application.SynchronizationContext.Post(_ => { List.Add(x); }, null);
+            //});
 
-            Application.SynchronizationContext.Post(_ => { Wind.Text = temperatureData.Wind; }, null);
-            Application.SynchronizationContext.Post(_ => { Pressure.Text = temperatureData.Pressure; }, null);
-            Application.SynchronizationContext.Post(_ => { Humidity.Text = temperatureData.Humidity; }, null);
-            Application.SynchronizationContext.Post(_ => { Water.Text = temperatureData.Water; }, null);
-            await Task.Delay(10000);
-            updateWithInterval();
+            //Application.SynchronizationContext.Post(_ => { Wind.Text = temperatureData.Wind; }, null);
+            //Application.SynchronizationContext.Post(_ => { Pressure.Text = temperatureData.Pressure; }, null);
+            //Application.SynchronizationContext.Post(_ => { Humidity.Text = temperatureData.Humidity; }, null);
+            //Application.SynchronizationContext.Post(_ => { Water.Text = temperatureData.Water; }, null);
+            //await Task.Delay(10000);
+            //updateWithInterval();
         }
 
         public void SetImage(string x)
