@@ -1,0 +1,23 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1">
+    <Button
+        android:text="Connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connect" />
+    <Button
+        android:text="ON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/on" />
+    <Button
+        android:text="OFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/off" />
+</LinearLayout>
