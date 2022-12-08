@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.ProjectOxford.Common.DotNetStandard" Version="1.0.0" />
     <PackageReference Include="Microsoft.ProjectOxford.Emotion.Temp" Version="1.0.1.5" />
     <PackageReference Include="Microsoft.ProjectOxford.Face.DotNetStandard" Version="1.0.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
 </Project>
